@@ -1,0 +1,3 @@
+class StudyItem
+  
+end
