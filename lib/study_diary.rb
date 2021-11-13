@@ -50,14 +50,14 @@ end
 def busca_item(lista)
   print "Digite o termo da busca: "
   substring = gets.chomp
-  lista.select! { |item|
+  sel_lista = lista.select { |item|
     item.nome.downcase.include? substring.downcase
   }  
-  if lista.length == 0
+  if sel_lista.length == 0
     puts "Não foram achados itens com o termo pesquisado."
     return
   end
-  puts lista
+  puts sel_lista
 end
 
 
