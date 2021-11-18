@@ -17,13 +17,6 @@ begin
     );
   SQL
 
-  seed_data = [["React", "JavaScript","Biblioteca front-end"],
-               ["Rails", "Ruby", "Framework para back-end"]]
-
-  seed_data.each do |data|
-    db.execute "INSERT INTO Estudo VALUES ( ?, ?, ? )", data
-  end
-
 rescue SQLite3::Exception => e
   puts e
 ensure
